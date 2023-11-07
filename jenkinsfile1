@@ -13,9 +13,9 @@ credentials(name:'myCredentials', description:'myCredentailsDesc', required:true
     stages {
         stage('Example') {
             steps {
-                echo “${params.environment}, ${params.version},${params.to_deploy_to_environment}”
-echo “${params.region},${params.myText},${params.myPassword},${params.myFile}”
-echo “${params.myCredentials}”
+                echo "${params.environment}, ${params.version},${params.to_deploy_to_environment}"
+echo "${params.region},${params.myText},${params.myPassword},${params.myFile}"
+echo "${params.myCredentials}"
             }
         }
     }
